@@ -6,7 +6,7 @@
 [![PyPI - Wheel](https://img.shields.io/pypi/wheel/fastapi-authz.svg)](https://pypi.org/project/fastapi-authz/)
 [![Pyversions](https://img.shields.io/pypi/pyversions/fastapi-authz.svg)](https://pypi.org/project/fastapi-authz/)
 [![Download](https://img.shields.io/pypi/dm/fastapi-authz.svg)](https://pypi.org/project/fastapi-authz/)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/casbin/lobby)
+[![Discord](https://img.shields.io/discord/1022748306096537660?logo=discord&label=discord&color=5865F2)](https://discord.gg/S5UjpzGZjN)
 
 fastapi-authz is an authorization middleware for [FastAPI](https://fastapi.tiangolo.com/), it's based
 on [PyCasbin](https://github.com/casbin/pycasbin).
@@ -147,12 +147,12 @@ bumpversion patch  # hotfix release
 
 ## Documentation
 
-The authorization determines a request based on ``{subject, object, action}``, which means what ``subject`` can perform
-what ``action`` on what ``object``. In this plugin, the meanings are:
+The authorization determines a request based on `{subject, object, action}`, which means what `subject` can perform
+what `action` on what `object`. In this plugin, the meanings are:
 
-1. ``subject``: the logged-in user name
-2. ``object``: the URL path for the web resource like `dataset1/item1`
-3. ``action``: HTTP method like GET, POST, PUT, DELETE, or the high-level actions you defined like "read-file", "
+1. `subject`: the logged-in user name
+2. `object`: the URL path for the web resource like `dataset1/item1`
+3. `action`: HTTP method like GET, POST, PUT, DELETE, or the high-level actions you defined like "read-file", "
    write-blog" (currently no official support in this middleware)
 
 For how to write authorization policy and other details, please refer
